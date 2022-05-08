@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Fake Neptun</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="user_name">Felhasználónév</string>
+    <string name="email">E-mail cím</string>
+    <string name="password_again">Jelszó megerősítése</string>
+    <string name="cancel">Mégse</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="address">Postai cím</string>
+    <string name="student">Hallgató</string>
+    <string name="teacher">Oktató</string>
+    <string name="change_data">adatok módosítása</string>
+    <string name="view_subjects">tantárgyak megtekintése</string>
+    <string name="all_students">Hallgatók megtekintése</string>
+    <string name="all_teachers">Oktatók megtekintése</string>
+    <string name="kar">Kar</string>
+    <string name="szak">Szak</string>
+    <string name="nev_valtas">Név:</string>
+    <string name="Kar">Kar:</string>
+    <string name="change">Módosítás</string>
+    <string name="Szak">Szak:</string>
+    <string name="delete">Törlés</string>
+    <string-array name="phone_modes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+    </string-array>
+</resources>

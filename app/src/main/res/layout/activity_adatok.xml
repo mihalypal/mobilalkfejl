@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdatokActivity">
+
+    <TextView
+        android:id="@+id/textViewHallgatoNev"
+
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/nev_valtas"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/nevBeviteliMezo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/default_margin"
+        android:hint="@string/name"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewHallgatoNev"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHallgatoNev"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewHallgatoKar"
+
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/Kar"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewHallgatoNev"
+        app:layout_constraintTop_toBottomOf="@+id/nevBeviteliMezo" />
+
+    <EditText
+        android:id="@+id/karBeviteliMezo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/default_margin"
+        android:hint="@string/name"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewHallgatoKar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHallgatoKar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewHallgatoSzak"
+
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/Szak"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewHallgatoKar"
+        app:layout_constraintTop_toBottomOf="@+id/karBeviteliMezo" />
+
+    <EditText
+        android:id="@+id/szakBeviteliMezo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:hint="@string/name"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewHallgatoSzak"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHallgatoSzak"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/modositoGomb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="modositas"
+        android:text="@string/change"
+        app:backgroundTint="#1763D5"
+        app:layout_constraintTop_toBottomOf="@id/szakBeviteliMezo"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="torles"
+        android:text="@string/delete"
+        app:backgroundTint="#FF0303"
+        app:layout_constraintTop_toBottomOf="@id/modositoGomb"
+        tools:layout_editor_absoluteX="56dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

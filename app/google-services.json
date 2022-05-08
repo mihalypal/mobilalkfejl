@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "924673289049",
+    "project_id": "fakeneptun",
+    "storage_bucket": "fakeneptun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924673289049:android:acc0beb78cd1f6831e7a48",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924673289049-g0u3p5bka4b58m1ph333u1j048iorc13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "b2f550082f8d7bac6959d6ff2c483019a3f5bf2f"
+          }
+        },
+        {
+          "client_id": "924673289049-lhdra2p6h0vti3m1ibis00orumnm41ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDEDQQA2kThDMUeirRt1cnILqp1Cvgffo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924673289049-lhdra2p6h0vti3m1ibis00orumnm41ce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
