@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
 
+    private NotificationHandler mNotificationHandler;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
         userNameET = findViewById(R.id.editTextUserName);
         passwordET = findViewById(R.id.editTextPassword);
+
+        mNotificationHandler = new NotificationHandler(this);
 
         Log.i(LOG_TAG, "OnCreate");
     }
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     editor.putString("email", username);
                     editor.putString("password", password);
                     editor.apply();
+                    mNotificationHandler.send("Sikeres bejelenetkezés: " + username);
                     useApplication();
                 } else {
                     Log.d(LOG_TAG, "User login fail");
